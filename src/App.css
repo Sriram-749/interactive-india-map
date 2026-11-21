@@ -1,38 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --navy: #101b2d;
+  --navy-light: #19283d;
+  --saffron: #f29b38;
+  --green: #27966b;
+  --text: #1c293b;
+  --muted: #8994a5;
+  --border: #e9edf2;
+  --surface: #ffffff;
+  --background: #f3f5f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: var(--navy);
+  color: var(--text);
+}
+
+button {
+  font-family: inherit;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(242, 155, 56, 0.55);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--saffron);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
