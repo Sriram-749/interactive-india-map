@@ -193,6 +193,10 @@
 
 .selection-card {
   padding: 28px;
+  max-height: 650px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .selection-heading {
@@ -206,6 +210,11 @@
 
 .selection-content {
   padding-top: 23px;
+  overflow-y: auto;
+  min-height: 0;
+  flex: 1;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
 }
 
 .list-heading {
@@ -335,6 +344,7 @@
 
   .selection-card {
     padding: 30px;
+    max-height: 500px;
   }
 
   .button-grid {
@@ -383,6 +393,7 @@
   .selection-card {
     border-radius: 15px;
     padding: 20px 16px;
+    max-height: 65svh;
   }
 
   .section-heading h2 {
